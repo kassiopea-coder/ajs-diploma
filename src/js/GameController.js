@@ -1,5 +1,8 @@
 import GamePlay from './GamePlay';
 import themes from './themes';
+import GameState from './GameState';
+import Team from './Team';
+
 
 export default class GameController {
   constructor(gamePlay, stateService) {
@@ -12,9 +15,11 @@ export default class GameController {
 
     // TODO: add event listeners to gamePlay events
     // TODO: load saved stated from stateService
-       
-      this.gamePlay.drawUi(themes[this.level]);
-     
+   
+    //draw board and characters
+    //this.gamePlay.drawUi(themes[this.state.level % 4]);
+    this.gamePlay.drawUi(themes[this.level]);
+    
 
 
   }
