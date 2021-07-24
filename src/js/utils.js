@@ -1,6 +1,6 @@
 export function calcTileType(index, boardSize) {
   // TODO: write logic here
-  if  (index % 8 === 0){
+  if (index % 8 === 0) {
     // first column - first line
     if (index < boardSize) {
       return 'top-left';
