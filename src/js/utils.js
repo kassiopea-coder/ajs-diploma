@@ -1,37 +1,37 @@
 export function calcTileType(index, boardSize) {
   // TODO: write logic here
   if (index % 8 === 0){
-     //first column - first line
-     if (index < boardSize) {
-        return 'top-left';
-     }
-     //first column - last line
-     if (index >= boardSize ** 2 - boardSize) {
-        return 'bottom-left';
-     }
-     //else first column
-     return 'left';
+    // first column - first line
+    if (index < boardSize) {
+      return 'top-left';
+    }
+     // first column - last line
+    if (index >= boardSize ** 2 - boardSize) {
+      return 'bottom-left';
+    }
+     // else first column
+      return 'left';
   }
 
   if (index % 8 === 7) {
-     //last column - first line
-     if (index < boardSize) {
-        return 'top-right';
-     }
-     //last column - last line
-     if (index >= boardSize ** 2 - boardSize) {
-        return 'bottom-right';
-     }
-     //else last column
-     return 'right';
+     // last column - first line
+    if (index < boardSize) {
+      return 'top-right';
+    }
+     // last column - last line
+    if (index >= boardSize ** 2 - boardSize) {
+      return 'bottom-right';
+    }
+     // else last column
+      return 'right';
   }
 
-  //center of first line
+  // center of first line
   if (index < boardSize) {
      return 'top';
    }
    //center of last line
-   if (index >= boardSize ** 2 - boardSize){
+   if (index >= boardSize ** 2 - boardSize) {
       return 'bottom';
    }
    // all the rest

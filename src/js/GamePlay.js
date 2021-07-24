@@ -187,11 +187,11 @@ export default class GamePlay {
   }
 
   static showError(message) {
-    alert(message);
+  //  alert(message);
   }
 
   static showMessage(message) {
-    alert(message);
+  //  alert(message);
   }
 
   selectCell(index, color = 'yellow') {
