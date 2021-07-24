@@ -1,5 +1,7 @@
 # AJS. Retro Game
 
+[![Build status](https://ci.appveyor.com/api/projects/status/0cfhi2kwguch2dpa/branch/master?svg=true)](https://ci.appveyor.com/project/kassiopea-coder/ajs-diploma/branch/master)
+
 ###### tags: `netology` `advanced js`
 
 ## Предыстория
