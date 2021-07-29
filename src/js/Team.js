@@ -1,4 +1,3 @@
-/*eslint no-trailing-spaces: "error"*/
 import { generateTeam, positionGenerator } from './generators';
 import PositionedCharacter from './PositionedCharacter';
 import Bowman from './Characters/Bowman';
@@ -19,7 +18,7 @@ export default class Team {
     });
     return this.positioned;
   }
-    
+
   add(positionedCharacter) {
     this.positioned.push(positionedCharacter);
   }
