@@ -18,6 +18,7 @@ export default class Team {
     });
     return this.positioned;
   }
+  
   add(positionedCharacter) {
     this.positioned.push(positionedCharacter);
   }
