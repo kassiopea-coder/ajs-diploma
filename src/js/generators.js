@@ -1,5 +1,3 @@
-import Team from './Team';
-
 /**
  * Generates random characters
  *
@@ -7,7 +5,7 @@ import Team from './Team';
  * @param maxLevel max character level
  * @returns Character type children (ex. Magician, Bowman, etc)
  */
-export function* characterGenerator(allowedTypes, maxLevel) {
+ export function* characterGenerator(allowedTypes, maxLevel) {
   const rand = Math.floor(Math.random() * allowedTypes.length); // 0 - allowedTypes.length
   const genCharacter = Object.create(allowedTypes[rand]);
   genCharacter.level = Math.floor(1 + Math.random() * maxLevel); // 1 - maxLevel
@@ -15,9 +13,9 @@ export function* characterGenerator(allowedTypes, maxLevel) {
 }
 
 export function generateTeam(allowedTypes, maxLevel, characterCount) {
-  const team = new Team();
+  const team = [];
   for (let i = 0; i < characterCount; i += 1) {
-    team.add(characterGenerator(allowedTypes, maxLevel).next().value);
+    team.push(characterGenerator(allowedTypes, maxLevel).next().value);
   }
   return team;
 }
