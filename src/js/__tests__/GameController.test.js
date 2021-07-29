@@ -2,7 +2,7 @@ import GameController from '../GameController';
 import GamePlay from '../GamePlay';
 import Swordsman from '../Characters/Swordsman';
 import PositionedCharacter from '../PositionedCharacter';
-import Daemon from '../Characters/Daemon';
+//import Daemon from '../Characters/Daemon';
 
 test('template literals', () => {
   const gamePlay = new GamePlay();
@@ -13,9 +13,9 @@ test('template literals', () => {
   const gameCtrl = new GameController(gamePlay, {});
   gameCtrl.init();
 
-  gameCtrl.playerPositions.push(new PositionedCharacter(new Swordsman(5), 9));
+  gameCtrl.playerTeam.add(new PositionedCharacter(new Swordsman(5), 9));
   gameCtrl.onCellEnter(9);
-  expect(gamePlay.cells[9].title).toBe('🎖5 ⚔40 🛡10 ❤50')
+  expect(gamePlay.cells[9].title).toBe('🎖5 ⚔40 🛡10 ❤50');
 
   gameCtrl.onCellEnter(8);
   expect(gamePlay.cells[8].title).toBe('');
