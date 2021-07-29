@@ -186,7 +186,7 @@ export default class GamePlay {
     this.loadGameListeners.forEach((o) => o.call(null));
   }
 
-  //static showError(message) {
+  // static showError(message) {
   //  alert(message);
   // }
 
