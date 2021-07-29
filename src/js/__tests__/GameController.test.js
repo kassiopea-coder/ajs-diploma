@@ -2,7 +2,7 @@ import GameController from '../GameController';
 import GamePlay from '../GamePlay';
 import Swordsman from '../Characters/Swordsman';
 import PositionedCharacter from '../PositionedCharacter';
-// import Daemon from '../Characters/Daemon';
+import Daemon from '../Characters/Daemon';
 
 test('template literals', () => {
   const gamePlay = new GamePlay();
