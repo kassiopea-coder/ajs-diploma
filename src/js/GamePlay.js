@@ -186,13 +186,13 @@ export default class GamePlay {
     this.loadGameListeners.forEach((o) => o.call(null));
   }
 
-  // static showError(message) {
-  //  alert(message);
-  // }
+  static showError(message) {
+    alert(message);
+  }
 
-  // static showMessage(message) {
-  //  alert(message);
-  // }
+  static showMessage(message) {
+    alert(message);
+  }
 
   selectCell(index, color = 'yellow') {
     this.deselectCell(index);
@@ -237,4 +237,20 @@ export default class GamePlay {
       throw new Error('GamePlay not bind to DOM');
     }
   }
+
+  // show the current level number on the board
+  setLevel(level) {
+    this.currentLevel.innerHTML = `LEVEL: ${level + 1}`;
+  }
+
+  // show the current score on the board
+  setScore(score) {
+    this.score.innerHTML = `SCORE: ${+score.toFixed(2)}`;
+  }
+
+  // show the best score on the board
+  setBestScore(score) {
+    this.bestScore.innerHTML = `BEST: ${+score.toFixed(2)}`;
+  }
 }
+
