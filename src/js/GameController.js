@@ -259,4 +259,3 @@ export default class GameController {
     this.gamePlay.redrawPositions([...this.playerTeam.positioned, ...this.enemyTeam.positioned]);
   }
 }
-

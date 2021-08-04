@@ -5,7 +5,7 @@
  * @param maxLevel max character level
  * @returns Character type children (ex. Magician, Bowman, etc)
  */
- export function* characterGenerator(allowedTypes, maxLevel) {
+export function* characterGenerator(allowedTypes, maxLevel) {
   // random types of char (0 - allowedTypes.length)
   const rand = Math.floor(Math.random() * allowedTypes.length);
   const genCharacter = Object.create(allowedTypes[rand]);

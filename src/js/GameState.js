@@ -111,4 +111,3 @@ export default class GameState {
     return this.enemy.map((anotherOne) => anotherOne.member);
   }
 }
-

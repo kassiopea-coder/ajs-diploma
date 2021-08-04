@@ -186,13 +186,13 @@ export default class GamePlay {
     this.loadGameListeners.forEach((o) => o.call(null));
   }
 
-  static showError(message) {
-    alert(message);
-  }
+  // static showError(message) {
+  //  alert(message);
+  // }
 
-  static showMessage(message) {
-    alert(message);
-  }
+  // static showMessage(message) {
+  //  alert(message);
+  // }
 
   selectCell(index, color = 'yellow') {
     this.deselectCell(index);
@@ -253,4 +253,3 @@ export default class GamePlay {
     this.bestScore.innerHTML = `BEST: ${+score.toFixed(2)}`;
   }
 }
-
